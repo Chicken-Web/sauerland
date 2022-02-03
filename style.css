@@ -282,6 +282,7 @@ footer {
 .livestreamvideo {
   border: none;
   max-width: 90%;
+  margin: 30px;
 }
 
 /* NOTE: Wellen */
