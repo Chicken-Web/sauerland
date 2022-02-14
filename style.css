@@ -43,6 +43,7 @@ body {
 }
 .show-menu-btn{
   float: right;
+  margin-right: 25px;
 }
 .show-menu-btn i{
   line-height: 50px;
@@ -302,7 +303,7 @@ footer {
 }
 
 .images img{
- width: 200px;
+  width: 200px;
   margin: 5px;
   cursor: pointer;
   transition: 0.4s;
@@ -325,6 +326,7 @@ footer {
 
 /* NOTE: 4. Section: */
 .sect4 {
+  height: 193vh;
   background-color: #8cc0f1;
   z-index: 2;
 }
@@ -334,7 +336,98 @@ footer {
   font-size: 40px;
 }
 
-.sect4 p {
-  margin-left: 120px;
-  font-size: 20px;
+.sect4 img {
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+
+.huhn {
+  margin-left: 10%;
+  margin-top: 60px;
+  width: 80%;
+  position: relative;
+  transition: 1s;
+}
+
+.huhn h2 {
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 250px;
+}
+
+.huhn p {
+  position: absolute;
+  margin-top: -140px;
+  margin-left: 250px;
+}
+
+.huhn2 {
+  margin-left: 10%;
+  margin-top: 60px;
+  width: 80%;
+  position: relative;
+  text-align: right;
+  transition: 1s;
+}
+
+
+.huhn2 h2 {
+  margin-top: -200px;
+  margin-right: 250px;
+}
+
+.huhn2 p {
+  margin-top: 60px;
+  margin-right: 250px;
+}
+
+@media screen and (max-width:1000px) {
+  .sect4 h1 {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .sect4 {
+    height: 380vh;
+  }
+  .huhn {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .huhn h2 {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 0px;
+  text-align: center;
+  }
+
+  .huhn p {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 0px;
+  text-align: center;
+  }
+
+  .huhn2 {
+    text-align: center;
+  }
+
+  .huhn2 h2 {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 0px;
+  text-align: center;
+  margin-right: 0px;
+  }
+
+  .huhn2 p {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 0px;
+  text-align: center;
+  margin-right: 0px;
+  }
 }
