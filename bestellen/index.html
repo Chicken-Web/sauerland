@@ -5,7 +5,8 @@
     <title>Eier Vorbestellen - Chicken Web</title>
     <link rel="icon" href="https://cdn.pixabay.com/photo/2018/03/07/22/44/cock-3207342_960_720.png">
     <script src="https://kit.fontawesome.com/cfac9d889b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style-order.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -48,14 +49,46 @@
   </div>
 </noscript>
 
-<h1 style="text-align: center; color: #fff;"> <br> Diese Seite ist in der Entwicklung. Es wird noch länger dauern, bis diese Seite verwendbar ist.
-                                <br><br>
-                                <a href="index.html">Möchtest du zurück zur Info-Seite?</a>
- </h1>
 
 
+ <div class="pro1">
+   <img src="pro1.jpg" alt="">
+   <h2>6 frische Eier</h2>
+   <div class="strich"></div>
+   <h1>3€</h1>
+  <button type="button" onclick="orderPro1()"><i class="fas fa-shopping-cart" style="font-size: 30px; color: #000;"></i></a></button>
+  <br><br>
+  <input type="datetime-local" id="datum" value="">
+ </div>
+
+ <div class="pro2">
+
+ </div>
+
+ <div class="pro3">
+
+ </div>
 
 
-
+ <script>
+  function orderPro1() {
+  function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+    var request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/966997434473533481/lbphyw9RVuqc3HowbWXROtdjF-Lf7lKkNzL1mgvPZZaHYW3BZ-q21gJovfjkTxWjahFw");
+    request.setRequestHeader('Content-type', 'application/json');
+    var params = {
+      content: ("> **@everyone Jemand hat 6 Eier auf deiner Website 6 Eier bestellt. **" + "**Abholzeitpunkt: **" + document.getElementById('datum').value)
+    }
+    request.send(JSON.stringify(params));
+	sleep(400)
+	alert("Erfolgreich!")
+  }
+  </script>
   </body>
 </html>
