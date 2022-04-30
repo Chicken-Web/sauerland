@@ -1,0 +1,37 @@
+.pro1 {
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 10%;
+  width: 400px;
+  height: 720px;
+  background-color: #fff;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.pro1 img {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  width: 400px;
+}
+
+.pro1 h2 {
+  margin-left: -150px;
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.pro1 h1 {
+  font-size: 40px;
+}
+
+.strich {
+  background-color: grey;
+  width: 300px;
+  height: 1px;
+  margin: 15px;
+}
+
+.pro1 i {
+
+}
